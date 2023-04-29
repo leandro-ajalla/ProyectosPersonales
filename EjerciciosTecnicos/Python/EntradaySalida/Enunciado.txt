@@ -1,0 +1,153 @@
+I. Ejercicios con entrada y salida por consola
+
+1. Hacer programas que permitan ingresar dos números enteros desde consola y
+muestren el resultado de las siguientes operaciones:
+a. N1 + N2
+b. N1 - N2
+c. N1 * N2
+d. N1 / N2
+e. N1 N2
+ej.
+ingrese N1: 3
+ingrese N2: 2
+3 a la 2 es = 9
+f. "División entera" y resto:
+ej.
+ingrese N1: 18
+ingrese N2: 5
+18 dividido 7 es 2 y sobran 4 (7 x 2 = 14 + 4 = 18)
+¿Qué sucede con el operador % en cada una de estas cuatro
+posibilidades?
+f.1. 18 % 5
+f.2. -18 % 5
+f.3. 18 % -5
+f.4. -18 % -5
+¿Cómo funciona este operador en otros lenguajes de programación: C /
+Python / Javascript / Java?
+
+2. Mostrar a cuántos segundos equivalen una cantidad de horas, días, minutos y
+segundos ingresados por consola.
+Ej:
+Ingrese días: 3
+Ingrese horas: 10
+Ingrese minutos: 20
+Ingrese segundos: 7
+9 días, 2 horas, 27 minutos, 13 segundos son 296407 segundos
+
+3. Realizar el procedimiento inverso al 2: Mostrar cuántos días, horas, minutos
+y segundos representa una cantidad de segundos ingresados por consola.
+Ej:
+Ingrese segundos: 786433
+786433 segundos son 9 días, 2 horas, 27 minutos, 13 segundos
+
+4. Informar superficie y perímetro de un rectángulo. Se ingresan las medidas de
+ambos lados.
+Nota:
+superficie = ladoMayor * ladoMenor
+perímetro = ladoMayor * 2 + ladoMenor * 2
+
+5. Convertir una distancia en Km a metros, pulgadas, yardas y millas.
+
+6. Calcule la superficie y el volúmen de una esfera, ingresando su radio.
+
+7. Hacer un programa que permita mostrar un ticket de devolución de envases
+para un supermercado.
+Se ingresa la cantidad de envases y se genera el ticket que informa la
+cantidad de envases y monto total a devolver.
+Por cada botella de vidrio se devuelven $1.50 y por cada botella plástica
+$2.00
+Ej.
+Ingrese botellas:
+vidrio: 3
+plástico: 4
+Devolución de botellas
+======================
+plástico 4 8.00
+vidrio 3 4.50
+----------------------
+total 7 12.50
+
+8. Mostrar el % del total de ventas de cada trimestre de un año.
+ej.
+Ingrese ventas del trimestre 1: 1000
+Ingrese ventas del trimestre 2: 500
+Ingrese ventas del trimestre 3: 1500
+Ingrese ventas del trimestre 4: 1000
+Ventas totales: 4000
+T1: 25.0%
+T2: 12.5%
+T3: 37.5%
+T4: 25.0%
+(Usar un decimal para los porcentajes)
+
+9. Escribir un programa que muestre la suma de los n primeros números enteros
+-entre 1 y n- (n lo ingresan por teclado)
+Nota: Para calcular la suma de los primeros n números enteros sin
+usar loops se puede usar la siguiente fórmula:
+n * (n + 1)
+s = -----------
+2
+Ej.
+Ingrese un número: 5
+La suma de los números entre 1 y 5 es 15
+
+10. Para calcular la distancia entre dos puntos en la superficie de la tierra
+hay que considerar que la diferencia entre grados de longitud varía según la
+latitud; si t1 y g1 son latitud y longitud de un punto y t2 y g2 son
+latitud y longitud de otro punto la distancia en kilómetros entre ambos
+puntos estará dada por:
+d[km] = 6371.01 . arccos(
+sen(t1) . sen(t2) +
+cos(t1) . cos(t2) . cos(g1 − g2 )
+)
+Nota: para poder usar funciones trigonométricas hay que "importar" el módulo math:
+import math # colocar esto al inicio del programa
+y luego usar
+math.sin(x)
+math.cos(x)
+math.acos(x)
+donde x está expresado en radianes… para convertir grados a radianes:
+math.radians(xg) donde xg está en grados
+En https://docs.python.org/3/library/math.html van a encontrar la referencia del
+módulo math
+
+11. Hacer un programa que pregunte un número de cuatro cifras y muestre la
+suma de sus dígitos.
+Ej.
+Ingrese un número: 1368
+La suma de los dígitos de 1368 es 18 (1 + 3 + 6 + 8)
+
+12. Nuestro vecino, pintor, nos pide ayuda para calcular cuántas latas de
+pintura tiene que comprar.
+Para eso le haremos un programa que pueda calcular la cantidad de latas que
+tiene que comprar.
+Nos dijo que con 1 Litro cubre 3 m2
+La idea es que ingrese la superficie y le diga cuántas latas de 20 Litros
+necesita.
+
+13. El sobrino de nuestro vecino pintor quiere controlar lo que le pagan por
+mes.
+Cobra 40% más por hora extra.
+Le descuentan 11% de jubilación, 6% de obra social, .
+Como parte del último aumento recibe 17% más por hora normal, que no
+son alcanzados por retenciones de jubilación u obra social.
+Le armamos un programita que le muestre lo que debería ser su recibo
+de sueldo.
+Ej.
+Horas trabajadas: 96
+Horas extra: 20
+Pago por hora: 150
+hs 96 150 14400
+extra 20 210 4200
+18600
+jubilación 11 2046
+obra social 6 1116
+3162
+extra 17 2448
+
+14. Hacer una función que redondee un número decimal F a una cantidad D de
+decimales.
+ej.
+redondear(14.672, 1) -> 14.7
+redondear(14.672, 2) -> 14.67
+redondear(14.679, 0) -> 14
