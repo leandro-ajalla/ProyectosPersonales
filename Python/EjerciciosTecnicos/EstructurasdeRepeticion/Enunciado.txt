@@ -1,0 +1,196 @@
+Ejercicios con estructuras de repetición
+
+1. Mostrar los números pares entre dos números que ingresan por teclado.
+Ej.:
+
+2. Imprimir la tabla de multiplicar de un número entero K (que se ingresa por
+teclado), entre 1 y 10.
+
+3. El factorial de un número n (n!) es el producto de todos los números enteros
+positivos menores o iguales que n
+Ej. el factorial de 5 es: 5 x 4 x 3 x 2 x 1 = 120
+Hacer un programa calculador del factorial de un número cualquiera.
+Ej.
+Ingrese un número: 4
+El factorial de 4 es 24
+
+4. Hacer un programa que genere un número de N cifras y pregunte al usuario números
+hasta que lo adivine.
+Mostrar la cantidad de intentos usados para adivinar el número.
+
+5. Realizar un programa que dibuje emoticones. Debe presentar un menú con
+opciones:
+1. feliz
+2. triste
+3. guiño
+4. escéptico
+0. finalizar
+Ej.
+Qué emoticon dibujo?
+1.feliz
+2.triste
+3.guiño
+4.escéptico
+0.finalizar
+> 4
+:|
+Qué emoticon dibujo?
+1.feliz
+2.triste
+3.guiño
+4.escéptico
+0.finalizar
+> 0
+-- hasta luego!! --
+- Como mejora, mostrar el emoticon dibujado con caracteres ascii
+Qué emoticon dibujo?
+1.feliz
+2.triste
+3.guiño
+4.escéptico
+0.finalizar
+> 1
+
+6. Hacer una función que reciba como parámetros N1 y N2 y devuelva cuántos múltiplos
+de N1 hay que sean menores que N2
+ej.
+mulMenores(2, 15) -> 6 (4,6, 8, 10, 12, 14)
+hacerlo con for y con while ¿Cuál es la ventaja de cada una?
+
+7. Hacer programas que generen las siguientes figuras, con la cantidad de
+niveles ingresados desde teclado:
+a.
+b.
+Ingrese altura: 5
+*
+**
+***
+****
+*****
+c.
+Ingrese altura: 5
+*
+**
+***
+****
+*****
+d.
+Ingrese altura: 5
+*
+***
+*****
+*******
+*********
+e.
+f.
+
+7. Un corredor de seguros necesita cobrar a su lista de clientes morosos.
+Nos pide que calculemos el valor de la deuda, ingresando el total anual de la
+póliza y los meses adeudados.
+Repetir hasta que ingresa total de póliza = 0
+Ej.
+póliza anual: 12000
+meses adeudados: 3
+debe: 3000
+póliza anual: 36000
+meses adeudados: 2
+debe: 6000
+póliza anual: 0
+--fin--
+
+8. Hacer un programa que multiplique p x q mediante sumas sucesivas. (p y q se
+ingresan por consola)
+
+9. Dados como datos 10 números enteros (se ingresan por teclado), obtener la
+suma de los números impares y el promedio de los números pares.
+
+10. Representar tres valores en un gráfico de barras verticales.
+
+11.
+a. Representar como porcentajes tres valores en un gráfico de barras
+verticales. (El valor máximo corresponde a 100%)
+b. Pueden ingresar entre 1 y 8 valores (hasta 8 barras)
+c. Representar como cantidades; el valor máximo dependerá del mayor número
+ingresado (hacer que la escala se ajuste automáticamente)
+
+12. Ingresar valores de temperatura (entre 10°C y 50°C) Al finalizar el
+ingreso de datos mostrar: mayor, menor, promedio y cantidad de valores
+ingresados (finaliza ingresando -1. Evitar ingreso de valores incorrectos.)
+Ej.
+Ingrese valores:
+25
+34
+15
+5
+Valor fuera de rango. Debe estar entre 10°C y 50°C
+20
+46
+33
+-1
+Mayor: 46
+Menor: 15
+Cantidad de valores: 6
+Promedio: 28.833333
+
+13. Realizar un programa que muestre una lista que tenga en cada renglón:
+- un número N
+- ese número multiplicado por 2
+- N dividido por 2
+- y si N es divisible por 3 o no (indicar "S" o "N")
+N varía entre un número que se ingrese por teclado y 1 (ambos inclusive)
+Ej.: Se ingresa 3. Se debe mostrar:
+3 6 1.5 S
+2 4 1.0 N
+1 2 0.5 N
+
+14. Generar una tabla con encabezado, seis filas y las siguientes columnas:
+número, par, impar, múltiplo de 3, primo.
+El número inicial se ingresa por consola
+En la tabla se marca en con X las condiciones que cumple cada número.
+Ej.
+ingrese un número: 3
+número par mult 4 mult 3 primo
+3 X X
+4 X X
+5 X
+6 X X
+7 X
+8 X X
+
+15. Un vendedor ha hecho una serie de ventas y desea saber cuántas de éstas
+fueron de $200 o menos; cuántas fueron mayores a $200 pero inferiores a
+$400; y cuántas de $400 o más. Se debe ingresar por teclado la cantidad de
+ventas, y el monto de cada una de ellas.
+
+16. Dados como datos 15 números enteros que ingresan por teclado, determine
+cuántos de ellos son pares y cuántos impares. Asegurar que ningún número
+que se ingresa sea mayor a 99 ni menor a 0
+
+17. Realizar un programa que permita ingresar pesos de cajas. Finaliza el
+ingreso de valores con 0. Las cajas tienen dos categorías según el peso: "A"
+entre 50g y 99g y "B" entre 100g y 200g. Al finalizar el ingreso de datos,
+informar la cantidad y el promedio del peso de las cajas "A" y la cantidad y
+el promedio del peso de las "B". Además mostrar el porcentaje que representa
+cada una respecto del total.
+(Nota: considerar que todos los datos serán mayores a 50g o menores a 200g)
+Ej.:
+
+18. Encontrar el número mayor y el número menor de una lista
+
+19. Mostrar los números contenidos en una lista con la desviación de cada uno
+respecto al promedio.
+
+20. Hacer un programa que permita jugar a adivinar un número.
+Ej.
+> Ingrese un número: 5
+5 no es el número secreto.
+> Ingrese un número: 8
+Adivinaste!!
+a. Agregar límite de cinco intentos como máximo
+b. Agregar que como ayuda el programa diga si el número secreto es mayor o
+menor que el intento del usuario
+> Ingrese un número: 5
+5 no es el número secreto.
+El número secreto es mayor a 5
+> Ingrese un número: 8
+Adivinaste!!
