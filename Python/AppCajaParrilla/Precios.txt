@@ -1,0 +1,11 @@
+PapasFritas 200
+Pancho 100
+Choripan 200
+HamburguesaSimple 300
+HamburguesaCompleta 400
+Lomito 450
+Bondiola 450
+Agua 100
+AguaSaborizada 100
+Gaseosa 150
+Cerveza 180
