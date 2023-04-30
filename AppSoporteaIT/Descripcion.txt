@@ -1,0 +1,55 @@
+-	Descripción de la app:
+El gerente del departamento de soporte de IT realizó una solicitud de desarrollo de una aplicación web en el que los usuarios finales puedan enviar solicitudes de soporte a IT con los datos necesarios para cumplir con las resoluciones; así como también, que el equipo de soporte IT pueda ingresar al sistema y realizar un management de los pedidos existentes (consultar pedidos pendientes, marcar como solucionado, etc.). Para esto, se necesita que los pedidos ingresados se guarden en una base de datos y, que al cambiar el estado de los mismos, la misma se actualice mostrando las respectivas tablas para que el equipo de soporte pueda manejar de manera correcta el flujo diario de los pedidos.
+
+-	Archivos necesarios para la ejecución de la app:
+•	soporte.py (Python)
+•	pedidos_soporte.db (SQLite)
+•	pedido-soporte.html (HTML)
+•	consultas.html (HTML)
+•	siguiente.html (HTML)
+
+-	Back-end:
+Para el funcionamiento de la app, se realizó un programa en el lenguaje de programación Python (versión 3.9.6) en el archivo .py antes mencionado, importando los módulos: bottle, para la conexión y funcionamiento con páginas web; y sqlite3, para la creación, conexión y manejo de consultas de la base de datos de los pedidos.
+
+-	Front-end:
+Para la visualización de la app desarrollada dentro del explorador web de preferencia, se utilizó el lenguaje de programación HTML (versión 5) en los archivos .html antes mencionados. Se realizó una estilización intermedia de la página que sirve como molde para luego ser completada por el equipo de desarrolladores front-end.
+En caso de necesitar más detalles sobre futura estilización de la app, contactar al equipo de front-end a través del siguiente mail: it-front-end-dept@pioix.edu.ar
+
+Testing de funcionamiento:
+
+•	Pedido de Soporte: página de landing para usuarios finales
+
+La ruta solicitada para la página de landing para usuarios finales se definió como “/pedido-soporte”.
+Al ingresar a la misma, el usuario final podrá ingresar el ID del equipo afectado (ubicado en la etiqueta del mismo) para poder ser debidamente identificado por el equipo de soporte IT.
+A continuación, deberá ingresar una descripción de la falla que afecta al equipo.
+Cabe destacar que ambos campos son obligatorios, es decir, el usuario no podrá enviar pedidos con datos vacíos.
+Luego de ingresados los datos necesarios, en la parte inferior de la ventana, se encuentra un botón que el usuario final utilizará para enviar el pedido al equipo. Al ser verificados los datos y enviado el pedido, la base de datos que contiene los pedidos existentes se actualizará automáticamente.
+
+
+•	Consultas: página de visualización de pedidos existentes (interno equipo de soporte IT)
+
+Para la página de consultas, se nos solicitó que se pueda visualizar una tabla según el estado del pedido, indicando los siguientes criterios:
+•	Fecha en que se cargó el pedido por el usuario final
+•	ID del equipo afectado
+•	ID de la falla (para luego ser utilizado en base de errores comunes)
+•	Fecha en que se solucionó el pedido
+•	Nombre de usuario que solucionó el pedido
+•	Descripción de la falla que afectó al equipo
+Se nos solicitó que la página de consultas cuente con una función para filtrar los pedidos según su estado, para lo cual se agregaron dos rutas:
+•	“/consultas?estado=pendiente”: Para visualizar los pedidos existentes pendientes por resolver
+
+•	“consultas?estado=solucionado”: Para visualizar los pedidos que han sido solucionados, con su respectiva fecha de cierre y resolutor.
+
+•	Función para marcar pedido como “solucionado” (interno equipo de soporte IT):
+Se planea realizar una página independiente para marcar pedidos como “solucionado”, pero debido a la urgencia, se nos solicitó que se pueda establecer a través de la url.
+Para realizar la función, el equipo de soporte IT tendrá que realizar el siguiente comando, siempre teniendo en cuenta el ID del pedido y el nombre de usuario del resolutor.
+Ejemplo:
+Para marcar el segundo caso de la lista de pedidos pendientes como solucionado, se necesita ingresar la url: /“solucionado?id=2&itguy="gerardo”
+ 
+En consecuencia, esto marcará el pedido del id seleccionado como “solucionado”, actualizará la base de datos de pedidos solucionados incluyendo al que se acaba de solucionar y lo mostrará con su respectiva fecha de solución y resolutor.
+ 
+La base de datos de pedidos pendientes también se actualizará.
+ 
+•	Siguiente: página para visualizar el próximo pedido pendiente en la lista (interno de soporte IT)
+Se nos solicitó incluir una página que le muestre al equipo de soporte de IT cuál es el próximo pedido pendiente por resolver entre los existentes y que lo tome según la fecha de creación, pudiendo así llevar un mejor control en la resolución de los mismos.
+Para esto, el equipo de soporte de IT debe ingresar a la ruta “/siguiente”
