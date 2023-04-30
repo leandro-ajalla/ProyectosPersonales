@@ -1,0 +1,6 @@
+-	Descripción de la app:
+
+El dueño de una parrilla realizó una solicitud de desarrollo de una aplicación en el que los usuarios finales puedan 
+realizar el cobro final de los productos solicitados por el cliente. El usuario final podra seleccionar la cantidad del producto y podra variar
+el precio de los mismo a traves de un documento txt y asi se actulizaria en la misma app.
+
