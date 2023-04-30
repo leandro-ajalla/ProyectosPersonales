@@ -1,0 +1,122 @@
+Hacer un programa que muestre el precio que cobra una empresa de reparto de
+paquetería.
+Cobra $250 por paquete hasta 10 Kg + $25 por Kg adicional
+Si es un particular, se le cobra 15% menos.
+Si es urgente, se recarga 25%
+Ej. 12 Kg, urgente → $250 + $25 x 2 + 25% = $375
+
+1. Hacer un programa que calcule el importe a cobrar por el alquiler de un auto:
+Se cobra $500 por día + $45 por kilómetro recorrido.
+1.b. Mostrar el importe a cobrar en un popup:
+1.c Que el botón "calcular" ocupe el ancho de la ventana
+
+2. Hacer un programa que permita calcular cuotas:
+- interés en 1 o 2 cuotas 0%, entre 3 y 6 cuotas 10%, 7 a 12 cuotas 20%, 13 a 18 cuotas 30%
+2. b. Agregar un botón "Limpiar" que deje todos los cuadros de texto en blanco, y el
+cursor posicionado en el campo de "Precio en una cuota"
+2. c. Agregar un botón "Salir del programa" que termine el programa luego de
+contestar afirmativamente en un cuadro de confirmación ("¿Desea salir del
+programa")
+
+3. Hacer un programa que permita ingresar nombre y apellido y al presionar un
+botón muestre nombre, apellido y al presionar otro botón muestre apellido,
+nombre.
+
+4. Hacer un programa con una pantalla similar a:
+1 es un Entry
+2 es un Button
+3 es un Label
+- Cuando el usuario presione el botón “Saludar” (2) muestre “Hola” + el
+nombre ingresado en (1) + “!” en el Label (3)
+- El título de la ventana es “saluda”
+- El tamaño de la letra del saludo debe ser más grande que el del resto de
+las demás y debe estar en negrita.
+4.b. Al anterior agregarle:
+- Si se presiona el botón y no se ingresó nombre, mostrar en el QLabel
+/ Label “ingrese nombre!”
+- Al presionar el botón limpiar el Entry (1)
+
+5. Nuestro vecino, pintor, nos pide ayuda para calcular cuántas latas de pintura
+tiene que comprar. Para eso le haremos un programa que pueda calcular la cantidad
+de latas que tiene que comprar. Nos dijo que con 1 Litro cubre 3 m2
+La idea es que ingrese la superficie a pintar y le informe cuántas latas
+necesita (y diga cuánto le va a sobrar)
+
+6. (GUI) Hacer un programa que permita calcular la porción diaria de
+alimento para perro o gato
+Gato: 15g por cada Kg de peso del gato, por día (Si el gato pesa
+menos de 2Kg → 30g)
+Perro: 7.56 * P + 110g donde P es el peso del perro en Kg
+El usuario selecciona mascota (perro o gato) e ingresa el peso de la
+mascota.
+Ej.
+Si el gato pesa 4 Kg
+15 * 4 = 60g
+
+7. Ingresar tres números y representarlos gráficamente, ordenados de mayor a menor
+en forma horizontal / vertical (depende de un checkbox)
+extras:
+- elegir color de cada barra.
+- agregar título
+- mostrar porcentaje y/o valor
+- guardar imagen
+
+8. El programa ("ejes_cartesianos.py" en la plataforma)
+import tkinter
+root = tkinter.Tk()
+# crea canvas de 400 x 300
+c = tkinter.Canvas(root, width=400, height=300);
+#
+c.create_line(100, 5, 100, 280, width="3")
+c.create_line(10, 155, 300, 155, width="3")
+c.create_text(80, 35, text="40",
+anchor=tkinter.SE,
+font="Arial 14 bold", fill="green")
+c.create_text(80, 65, text="30",
+anchor=tkinter.SE,
+font="Arial 14 bold", fill="green")
+c.create_text(80, 95, text="20",
+anchor=tkinter.SE,
+font="Arial 14 bold", fill="green")
+c.create_text(80, 125, text="10",
+anchor=tkinter.SE,
+font="Arial 14 bold", fill="green")
+c.create_text(80, 155, text="0",
+anchor=tkinter.SE,
+font="Arial 14 bold", fill="green")
+c.grid(row=0, column=0)
+root.mainloop()
+genera la siguiente pantalla:
+- Modificarlo para:
+a. Mostrar los números utilizando un loop (for o while) -en lugar de usar 5 create_textb.
+Agregar la posibilidad de que el usuario defina el valor máximo, y cada cuánto
+mostrar los números. Ej.:
+c. Mostrar las pequeñas líneas horizontales correspondientes a cada valor, y las
+flechas de los ejes (ver imagen arriba)
+
+9. Nos encargan una pequeña utilidad que genere una lista de direcciones de red
+IPv4
+Las direcciones IPv4 se escriben con cuatro números decimales entre 0 y 255
+separados por un punto (Ej. 200.167.45.3)
+El usuario debe ingresar los 3 primeros números, y la cantidad de direcciones que
+desea.
+Nuestro programa deberá generar una lista con las direcciones considerando que no
+pueden usar 0 o 255, y que debe existir la mayor distancia posible entre cada IP
+
+10.
+Hacer un pequeño programa que gestione una sala de espera.
+Cuando llega un cliente se agrega su DNI a una lista.
+Si se presiona "Atender" se elimina el primero de la lista y se muestra un
+pop-up con el DNI que hay que atender
+Si se presiona "Borrar" se borra el DNI seleccionado, previa confirmación
+con un pop-up
+
+11.
+Hacer un programa que permita ajustar componentes de rojo, verde y azul y
+muestre el color y el código resultante en formato #rrggbb (rr, gg, bb son
+dos dígitos en hexadecimal)
+
+12.
+Cuando se presiona un botón "Generar" llenar una lista con N números aleatorios entre 1 y
+10
+Al presionar "Limpiar" limpiar la lista.
