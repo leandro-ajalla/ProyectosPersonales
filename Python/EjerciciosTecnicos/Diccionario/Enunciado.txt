@@ -1,0 +1,75 @@
+Diccionarios
+
+1. En los teclados de teléfonos móviles anteriores a los smartphones, se escribía
+texto y símbolos presionando varias veces una misma tecla numérica.
+Mostrar la secuencia necesaria para escribir un mensaje; Respetar mayúsculas y
+minúsculas: si se presiona # la próxima letra será mayúscula; ej. B es #22
+Ej.
+Ingrese mensaje: Compra un Kilo
+Secuencia de teclas: #222 666 6 7 777 2 0 88 66 #0 55 444 555 666
+
+2. Hacer un programa que traduzca una frase en español a código morse.
+https://es.wikipedia.org/wiki/C%C3%B3digo_morse
+
+3. Hacer un programa que traduzca una frase de código morse a español
+● Extra: hacer en el mismo programa 2 y 3
+
+4. Determinar si dos palabras o frases son anagramas
+
+5. Hacer el ejercicio 6 de Strings (scrabble) usando diccionarios.
+
+6. Generar y mostrar un cartón de bingo (bingo 75, ver
+https://es.wikipedia.org/wiki/Bingo#Cartones )
+Cada letra B, I, N, G, O es una clave de un diccionario; y cada uno de los
+valores que les corresponden es una lista con los números (o espacios)
+Ej.
+carton = { 'B': [0, 8, 4, 7, 11], 'I': [17, 0, 23, 28, 19], 'N': [35, 41, 0, 37,
+33], 'G': [54, 48, 52, 0, 50], 'O': [61, 68, 70, 74, 0]}
+corresponde a:
+
+7. Hacer un programa que haga una simulación de tirar 2 dados N veces (El valor de N
+lo ingresa un usuario) y genere una tabla con el puntaje (suma de ambos dados), la
+cantidad y el % de cada puntaje.
+Ej.
+Ingrese cantidad de muestras: 1000
+punt cant %
+2 29 2.90
+3 69 6.90
+4 94 9.40
+5 119 11.90
+6 142 14.20
+7 142 14.20
+8 150 15.00
+9 105 10.50
+10 79 7.90
+11 45 4.50
+12 26 2.60
+
+8. Hacer un programa que permita registrar ingresos de productos a un depósito.
+El encargado ingresa código de producto y cantidad de cajas.
+Al ingresar FIN como código, se da por terminado el turno y el programa muestra la
+lista de artículos totales en stock.
+Ej.
+BG15002 3
+BG22501 2
+LG04501 4
+BG22501 5
+BG15002 3
+FIN
+BG15002 6
+BG22501 7
+LG04501 4
++ Extra: mostrar en la lista la descripción del producto y cantidad de elementos
+totales además de la cantidad de cajas.
+
+9. Un amigo nos pide hacer un sistema muy sencillo para llevar el control de la
+fotocopiadora de su negocio. Quiere ingresar el código y cantidad de cada producto
+y que al final del día el programa muestre un resumen de lo vendido y el total
+diario
+La lista de producto y precios es:
+cód descripción precio
+1 Simple faz 0.55
+2 Doble faz 1.10
+3 Color 3.50
+4 Ampliación 2.50
+Y además, el % de cada artículo sobre el total diario
