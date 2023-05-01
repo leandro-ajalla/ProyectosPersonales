@@ -1,0 +1,17 @@
+Generar una clase llamada Autor que contenga:
+
+-3 atributos private: nombre (String), email (String), y genero (char 'm' o 'f')
+-1 constructor que inicializa el nombre, email y genero
+-Algunos public getters/setters: getNombre(), getEmail(), setEmail(), y getGenero()
+-1 método toString() que devuelva "Autor[nombre=?,email=?,genero=?]"
+
+Y
+
+Una clase Libro con:
+
+-4 atributos private: nombre (String), autor (de la clase Autor recien creada, precio (double), y cantidad (int);
+-2 constructores:
+public Libro (String nombre, Autor autor, double precio) { ...... }
+public Libro (String nombre, Autor autor, double precio, int cantidad) { ...... }
+-Métodos public getNombre(), getAutor(), getPrecio(), setPrecio(), getCantidad(), setCantidad().
+-1 método toString() que devuelva "Libro[nombre=?,Autor[nombre=?,email=?,genero=?],precio=?,cantidad=?]". Se deberá reusar el método toString() del Autor.
