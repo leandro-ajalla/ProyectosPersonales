@@ -1,0 +1,4 @@
+Objetivo: determinar si dos circulos se tocan
+Utilizando POO crear dos clases distintas, punto y circulo, las cuales tendrán resposabilidades (métodos) diferentes.
+El punto tendrá un método encargado de devolver la distancia a otro punto.
+El circulo a su vez tendrá una función en la cual debe recibir otro circulo y retornar verdadero o falso para la pregunta si se tocan con entre si.
