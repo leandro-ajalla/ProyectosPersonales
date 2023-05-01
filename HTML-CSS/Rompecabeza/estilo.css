@@ -1,0 +1,27 @@
+#heladera{
+    position: absolute;
+}
+
+#huevera{
+    position: absolute;
+    top: 20%;
+    left: 53%;
+}
+
+#estante{
+    position: absolute;
+    top: 28%;
+    left: 52%;
+}
+
+#bandeja{
+    position: absolute;
+    top: 43%;
+    left: 52%;
+}
+
+#caj{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+}
